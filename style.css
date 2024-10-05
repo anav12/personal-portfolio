@@ -47,18 +47,17 @@ p{
 
 }
 .container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-    padding: 30px;
+    width: 100%;
+    margin-top: 25px;
     display: flex;
-    align-items: center; 
-    justify-content: center; 
-    flex-direction: column; 
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;  
+     
 }
 #about{
     border-bottom: 1px solid #ccc; 
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 
 }
 .about, .experience, .project, .award, .contact {
@@ -111,35 +110,15 @@ p{
     border-color: #333; /* Border color change for GitHub link on hover */
 }
 .about-img {
-    width: 214px;
-    height: 202px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     border: 2px solid #fff;
     margin-bottom: 20px; 
 }
-.experience1-img {
-    width: 215px;
+.experience1-img, .experience2-img, .project1-img, .project2-img, .award1-img, .award2-img, .award3-img {
+    width: 200px;
     height: 200px;
-}
-.project1-img{
-    width: 214px;
-    height: 160px;
-}
-.project2-img{
-    width: 210px;
-    height: 183px;
-}
-.award1-img{
-    width: 215px;
-    height: 215px;
-}
-.award2-img{
-    width: 214px;
-    height: 160px;
-}
-.award3-img{
-    width: 215px;
-    height: 216px;
 }
 footer {
     background: #333;
@@ -147,4 +126,106 @@ footer {
     text-align: center;
     padding: 1rem 0;
     margin-top: 2rem;
+}
+
+
+/* Responsive Design*/
+
+/* for-phone-only */
+@media (max-width: 599px) { 
+    p{
+        font-size: medium;
+        padding-bottom: 5%;
+    }
+    .with-dash::before {
+        content: "— ";
+        color: #ccc; 
+        margin-right: 5%;
+    
+    }
+    .container {
+        width: 100%;
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;  
+         
+    }
+    #about{
+        border-bottom: 0.2% solid #ccc; 
+        padding-bottom: 5.4%;
+    
+    }
+    .about, .experience, .project, .award, .contact {
+        width: 100%;
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+    }
+    .social-links {
+        display: flex;
+        gap: 2%; 
+        justify-content: center; 
+        width: 100%; 
+    }
+    .social-links a {
+        text-decoration: none; 
+        color: #0077b5; /* LinkedIn color  */
+        font-weight: bold;
+        padding: 1% 2%;
+        border-radius: 1%;
+        border: 0.5% solid transparent;
+        transition: all 0.3s ease;
+    }
+    .about-img {
+        width: 50%;
+        height: 50%;
+        border-radius: 50%;
+        border: 0.5% solid #fff;
+        margin-bottom: 4%; 
+    }
+    .experience1-img, .experience2-img, .project1-img, .project2-img, .award1-img, .award2-img, .award3-img {
+        width: 50%;
+        height: 50%;
+    }
+    
+
+}
+
+
+/* for-tablet-portrait-up */
+@media (min-width: 600px) {
+
+
+}
+
+
+/* for-tablet-landscape-up */
+@media (min-width: 900px) { 
+
+
+}
+
+
+/* for-desktop-up */
+@media (min-width: 1200px) { 
+
+
+}
+
+
+/* for-medium-desktop-up */
+@media (min-width: 1400px) { 
+    
+
+}
+
+
+/* for-big-desktop-up */
+@media (min-width: 1800px) { 
+
+
 }
